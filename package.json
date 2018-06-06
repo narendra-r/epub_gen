@@ -9,6 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "epub-gen": "0.0.20"
+    "epub-gen": "0.0.20",
+    "mammoth": "^1.4.6",
+    "recursive-readdir": "^2.2.2"
   }
 }
