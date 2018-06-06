@@ -3,7 +3,6 @@ var Epub = require("epub-gen")
 var mammoth = require("mammoth");
 const path = require('path');
 var fs = require('fs');
-require('os').homedir()
 var recursive = require("recursive-readdir");
 
 var destinationPath = "/Users/kvanamac3/Downloads/Verse_doc_Chapter\ Wise/CH18";
@@ -57,9 +56,4 @@ function createePub(name,text) {
     };
 
      new Epub(option, ePubDirectory+"/"+name+".epub");
-}
-
-
-function getUserHome() {
-    return process.env[(process.platform == 'win32') ? 'USERPROFILE' : 'HOME'];
 }
